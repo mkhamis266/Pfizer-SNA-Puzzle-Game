@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Image Puzzle</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon-32x32.png" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/image-puzzle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section id="startSection">
+      <div id="startButton"></div>
+    </section>
+    <section id="gameSection">
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col-4 d-flex justify-content-start">
+            <img src="images/logo-pfizr.png" width="80" alt="" />
+          </div>
+          <div class="col-4 d-flex justify-content-center">
+            <img src="images//logo-vision.png" width="60" alt="" />
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+            <img src="images/logo-dream.png" width="60" alt="" />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="playPanel" style="padding: 5px">
+        <hr />
+        <div class="game-container">
+          <div class="col-6 text-center">
+            <ul id="sortable" class="sortable"></ul>
+          </div>
+          <div id="actualImageBox" class="col-6">
+            <div id="stepBox">
+              <div>Steps:</div>
+              <div class="stepCount">0</div>
+            </div>
+            <div id="timeBox">Time Taken: <span class="timeCount">0</span> secs</div>
+            <img id="actualImage" />
+          </div>
+          <div id="gameOver" class="col-6">
+            <div class="content-container text-center">
+              <h2>Congratulations!!</h2>
+              <!-- <h3>You have completed this picture.</h3> -->
+              <!-- <div class="info">
+                <div>Steps: <span class="stepCount">0</span> steps.</div>
+                <div>Time Taken: <span class="timeCount">0</span> seconds</div>
+              </div> -->
+              <div style="font-size: 36px">score: <span class="score">0</span></div>
+              <div>
+                <button class="resetButton btn btn-primary">Play Again</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/image-puzzle.js"></script>
+    <!-- <script>
+      var images = [
+        { src: "images/london-bridge.jpg", title: "London Bridge" },
+        { src: "images/lotus-temple.jpg", title: "Lotus Temple" },
+        { src: "images/qutub-minar.jpg", title: "Qutub Minar" },
+        { src: "images/statue-of-liberty.jpg", title: "Statue Of Liberty" },
+        { src: "images/taj-mahal.jpg", title: "Taj Mahal" },
+      ];
+
+      $(function () {
+        var gridSize = 4;
+        imagePuzzle.startGame(images, gridSize);
+      });
+    </script> -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
