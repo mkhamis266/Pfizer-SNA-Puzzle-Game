@@ -7,7 +7,7 @@ export class Game {
       // { src: "images/statue-of-liberty.jpg", title: "Statue Of Liberty" },
       // { src: "images/taj-mahal.jpg", title: "Taj Mahal" },
     ];
-    this.gridSize = 4;
+    this.gridSize = 3;
     this.stepCount = 0;
     this.timer = 0;
     this.timerInterval;
