@@ -84,7 +84,7 @@
 
 .win-message {
   font-weight: bold;
-  text-shadow: 1px 5px 10px var(--main-color);
+  text-shadow: 1px 1px 50px #59f1f1
 }
 
 .win-message {
@@ -95,7 +95,7 @@
 .win-message span {
   position: relative;
   display: inline-block;
-  color: #fff;
+  color: var(--main-color);
   text-transform: uppercase;
   animation: waviy 1s infinite;
   animation-delay: calc(0.1s * var(--i));
