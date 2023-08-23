@@ -1,81 +1,82 @@
-﻿#gameSection{
-    color: #00b4b3;
+﻿#gameSection {
+  color: var(--main-color);
 }
-#gameSection hr{
-    border:none;
-    border-top:2px solid #F2F2F2;
-    height:1px;
+#gameSection hr {
+  border: none;
+  border-top: 2px solid #f2f2f2;
+  height: 1px;
 }
 
 #gameSection #playPanel {
-    background-color:#F2F2F2;
-    padding:10px 0px;
-    margin: 10px auto;
-    width: 80%;
+  background-color: #f2f2f2;
+  padding: 10px 0px;
+  margin: 10px auto;
+  width: 80%;
 }
 
-#gameSection .game-container{
-    display: flex;
+#gameSection .game-container {
+  display: flex;
 }
 
 #gameSection #actualImageBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
 }
-#gameSection #actualImageBox .content-container{
-    flex-direction: column;
-    background-color: #00b4b3;
-    text-align: center;
-    color: #fff;
-    min-height: 94%;
-    margin-top: 2%;
-    display: flex;
-    justify-content: space-around;
-}
-
-#gameSection #actualImageBox .content-container .info{
-    display: flex;
-    justify-content: space-evenly;
+#gameSection #actualImageBox .content-container {
+  flex-direction: column;
+  background-color: var(--main-color);
+  text-align: center;
+  color: #fff;
+  min-height: 94%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
 }
 
-#gameSection #stepBox, #gameSection #timeBox {
-    display:inline-block;
-    /* width:48%; */
-    font-size: 26px;
+#gameSection #actualImageBox .content-container .info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#gameSection #stepBox,
+#gameSection #timeBox {
+  display: inline-block;
+  /* width:48%; */
+  font-size: 26px;
 }
 
 #gameSection #stepBox div {
-    /* background-color:#00b4b3; */
-    display:inline-block;
-    padding:1px 4px;
-    margin: 0px auto;
-    max-width:800px;
+  /* background-color:#00b4b3; */
+  display: inline-block;
+  padding: 1px 4px;
+  margin: 0px auto;
+  max-width: 800px;
 }
 
-#gameSection img#actualImage{
-    border:2px solid #a46;
-    height:280px;
-    width:280px;
+#gameSection img#actualImage {
+  border: 2px solid #a46;
+  height: 280px;
+  width: 280px;
 }
 
 #gameSection #sortable {
-    border:2px solid #a46;
-    list-style-type: none;
-    display: inline-block;
-    margin: 10px;
-    padding: 0;
-    width: 404px;
+  border: 2px solid #a46;
+  list-style-type: none;
+  display: inline-block;
+  margin: 10px;
+  padding: 0;
+  width: 404px;
 }
 
 #gameSection #sortable li {
-    background-size: 400% 400%;
-    border: none;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    float: left;
-    width: 100px;
-    height: 100px;
+  background-size: 400% 400%;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100px;
+  height: 100px;
 }

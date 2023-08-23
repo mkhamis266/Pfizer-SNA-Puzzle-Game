@@ -1,6 +1,9 @@
 ﻿* {
   box-sizing: border-box;
 }
+:root {
+  --main-color: #00b4b3;
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -47,4 +50,14 @@ h3 {
   font-weight: normal;
   margin: 3px 0px;
   text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+
+  &:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+  }
 }
