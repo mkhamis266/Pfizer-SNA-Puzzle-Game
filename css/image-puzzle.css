@@ -1,5 +1,6 @@
 ﻿#gameSection {
   color: var(--main-color);
+  font-family: "Alfa Slab One", cursive;
 }
 #gameSection hr {
   border: none;
@@ -79,4 +80,34 @@
   float: left;
   width: 100px;
   height: 100px;
+}
+
+.win-message {
+  font-weight: bold;
+  text-shadow: 1px 5px 10px var(--main-color);
+}
+
+.win-message {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 2rem;
+}
+.win-message span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
 }
