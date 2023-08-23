@@ -21,7 +21,7 @@ export class Game {
     $("#actualImageBox").show();
     this.startTime = new Date();
     this.timerInterval = setInterval(() => this.countUp(), 1000);
-    $(".timeCount").html("00 mins | 00 secs");
+    $(".timeCount").html("00 : 00");
     $(".stepCount").html(this.stepCount);
     this.setImage();
     this.enableSwapping("#sortable li");
@@ -33,7 +33,7 @@ export class Game {
   countUp() {
     this.timer++;
     let timeTaken = new Date() - this.startTime;
-    let timeMessage = moment(timeTaken).format("mm [mins |] ss [secs]");;
+    let timeMessage = moment(timeTaken).format("mm [:] ss");;
     $(".timeCount").html(timeMessage);
   }
 
