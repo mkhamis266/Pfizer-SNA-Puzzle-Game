@@ -16,8 +16,8 @@ export class Game {
   }
 
   startGame() {
-    $("#gameOver").show();
-    $("#actualImageBox").hide();
+    $("#gameOver").hide();
+    $("#actualImageBox").show();
     $(".timeCount").html(this.timer);
     $(".stepCount").html(this.stepCount);
     this.setImage();
