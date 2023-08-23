@@ -1,6 +1,9 @@
-﻿#gameSection {
+﻿@import url("https://fonts.cdnfonts.com/css/games");
+
+#gameSection {
   color: var(--main-color);
-  font-family: "Alfa Slab One", cursive;
+  font-family: "Games", sans-serif;
+  letter-spacing: 0.5rem;
 }
 #gameSection hr {
   border: none;
@@ -84,7 +87,7 @@
 
 .win-message {
   font-weight: bold;
-  text-shadow: 1px 1px 50px #59f1f1
+  text-shadow: 1px 1px 50px #59f1f1;
 }
 
 .win-message {
