@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon-32x32.png" />
-    <link href="css/style-1.css?val=3" rel="stylesheet" />
-    <link href="css/image-puzzle-1.css?val=3" rel="stylesheet" />
+    <link href="css/style-1.css?val=4" rel="stylesheet" />
+    <link href="css/image-puzzle-1.css?val=4" rel="stylesheet" />
   </head>
 
   <body>
@@ -21,6 +21,11 @@
           <img src="images/logo-dream.png?val=1" height="70" alt="" />
         </div>
       </div>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <img src="images/header.png?val=1" class="img-fluid w-50 pt-3" alt="" />
+        </div>
+      </div>
       <div id="playPanel" class="p-5 mt-2">
         <div class="game-container">
           <div class="col-6 text-center">
@@ -30,10 +35,9 @@
             <div class="d-flex flex-column justify-content-center align-items-center">
               <img id="actualImage" class="mb-4" />
               <div id="stepBox">
-                <div>Moves:</div>
-                <div class="stepCount">0</div>
+                <div>Moves: <span class="stepCount"></span></div>
               </div>
-              <div id="timeBox">Timer: <span class="timeCount">00</span> Seconds</div>
+              <div id="timeBox">Timer: <span class="timeCount">00</span></div>
             </div>
           </div>
           <div id="gameOver" class="col-6">
@@ -66,12 +70,14 @@
               </div>
             </div>
           </div>
+          <img class="vision-logo" src="images/logo-vision-dark.png?val=1" alt="">
         </div>
       </div>
     </section>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script type="module" src="js/main-1.js?val=3"></script>
+    <script src="js/momentjs.com_downloads_moment.js"></script>
+    <script type="module" src="js/main-1.js?val=4"></script>
   </body>
 </html>

@@ -22,7 +22,7 @@ body {
 }
 
 #startSection {
-  background-image: url(../images/start-game-bg.png?val=1);
+  background-image: url(../images/start-game-bg.png?val=2);
 }
 #startSection #startButton {
   position: relative;

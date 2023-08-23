@@ -1,17 +1,12 @@
-﻿@import url("https://fonts.cdnfonts.com/css/games");
+﻿/* @import url("https://fonts.cdnfonts.com/css/games"); */
 
 #gameSection {
   color: var(--main-color);
-  font-family: Arial, Helvetica, sans-serif;
-}
-#gameSection hr {
-  border: none;
-  border-top: 2px solid #f2f2f2;
-  height: 1px;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 #gameSection #playPanel {
-  background-color: #f2f2f2;
+  background-color: #ffffffd6;
   padding: 10px 0px;
   margin: 10px auto;
   width: 80%;
@@ -84,10 +79,10 @@
   height: 100px;
 }
 
-#gameOver {
+/* #gameOver {
   font-family: "Games", sans-serif;
   letter-spacing: 0.5rem;
-}
+} */
 .win-message {
   font-weight: bold;
   text-shadow: 1px 1px 50px #59f1f1;
@@ -116,4 +111,16 @@
   20% {
     transform: translateY(-20px);
   }
+}
+
+.game-container {
+  position: relative;
+}
+
+.vision-logo {
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+  width: 100px;
+  height: auto;
 }
