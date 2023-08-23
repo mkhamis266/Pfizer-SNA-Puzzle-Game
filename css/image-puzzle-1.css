@@ -54,18 +54,20 @@
 }
 
 #gameSection img#actualImage {
-  border: 2px solid #a46;
+  /* border: 2px solid #a46; */
   height: 280px;
   width: 280px;
+  box-shadow: 1px 1px 10px var(--gray);
 }
 
 #gameSection #sortable {
-  border: 2px solid #a46;
+  /* border: 2px solid #a46; */
+  box-shadow: 1px 1px 10px var(--gray);
   list-style-type: none;
   display: inline-block;
   margin: 10px;
   padding: 0;
-  width: 404px;
+  width: 400px;
 }
 
 #gameSection #sortable li {
@@ -125,7 +127,7 @@
   height: auto;
 }
 
-#timeBox{
+#timeBox {
   background-color: var(--main-color);
   color: #fff;
   border-radius: 15px;
