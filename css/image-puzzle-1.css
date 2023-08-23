@@ -58,6 +58,7 @@
   height: 280px;
   width: 280px;
   box-shadow: 1px 1px 10px var(--gray);
+  border-radius: 10px;
 }
 
 #gameSection #sortable {
@@ -68,6 +69,8 @@
   margin: 10px;
   padding: 0;
   width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 #gameSection #sortable li {
