@@ -124,3 +124,12 @@
   width: 100px;
   height: auto;
 }
+
+#timeBox{
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px #ffffffd6 inset;
+  padding: 0.25rem 1rem;
+  margin-top: 0.75rem;
+}
