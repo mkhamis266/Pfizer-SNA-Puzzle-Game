@@ -9,8 +9,8 @@ export class Game {
     ];
     this.gridSize = 3;
     this.stepCount = 0;
-    // this.timer = 0;
-    this.startTime = new Date();
+    this.timer = 0;
+    this.startTime;
     this.timerInterval;
     $("#startButton").on("click", () => this.startGame());
     $(".resetButton").on("click", () => this.reset());
@@ -19,6 +19,7 @@ export class Game {
   startGame() {
     $("#gameOver").hide();
     $("#actualImageBox").show();
+    this.startTime = new Date();
     this.timerInterval = setInterval(() => this.countUp(), 1000);
     $(".timeCount").html("00 mins | 00 secs");
     $(".stepCount").html(this.stepCount);
@@ -30,6 +31,7 @@ export class Game {
   }
 
   countUp() {
+    this.timer++;
     let timeTaken = new Date() - this.startTime;
     let timeMessage = moment(timeTaken).format("mm [mins |] ss [secs]");;
     $(".timeCount").html(timeMessage);
