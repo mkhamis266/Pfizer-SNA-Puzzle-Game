@@ -74,6 +74,7 @@ export class Game {
           $("#resetButton").eq(0).hide();
           $("#actualImageBox").hide();
           $("#gameOver").show();
+          setTimeout(() => this.disableSwapping("#sortable li"), 10);
         }
       },
     });
@@ -84,6 +85,10 @@ export class Game {
     $(droppedElement).replaceAll(uiEventParam.draggable);
     this.enableSwapping($dragElem);
     this.enableSwapping(droppedElement);
+  }
+
+  disableSwapping(elem) {
+    $(elem).draggable("disable");
   }
 
   isSolved() {
